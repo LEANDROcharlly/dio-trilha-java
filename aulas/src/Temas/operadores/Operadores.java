@@ -7,6 +7,7 @@ public class Operadores {
         //operador de atribuição =
         System.out.println("Operador de atribuicao");
         String nome = "Leandro";
+        System.out.println("Nome: " + nome);
 
         System.out.println();
 
@@ -32,19 +33,19 @@ public class Operadores {
         String concatenacao = "?";
 
         concatenacao = 1+1+1+"1";
-        System.out.println("Concatenacao = " concatenacao);
+        System.out.println("Concatenacao = " + concatenacao);
 
         concatenacao = 1+"1"+1+1;
-        System.out.println("Concatenacao = " concatenacao);
+        System.out.println("Concatenacao = " + concatenacao);
         
         concatenacao = 1+"1"+1+"1";
-        System.out.println("Concatenacao = " concatenacao);
+        System.out.println("Concatenacao = " + concatenacao);
 
         concatenacao = "1"+1+1+1;
-        System.out.println("Concatenacao = " concatenacao);
+        System.out.println("Concatenacao = " + concatenacao);
 
         concatenacao = "1"+(1+1+1);
-        System.out.println("Concatenacao = " concatenacao);
+        System.out.println("Concatenacao = " + concatenacao);
 
         System.out.println();
 
@@ -91,23 +92,23 @@ public class Operadores {
 
         System.out.println("numeroUm é igual a numeroDois? " + simNao);
 
-        boolean simNao = numero1 != numero2;
+        simNao = (numero1 != numero2);
 
         System.out.println("numeroUm é diferente a numeroDois? " + simNao);
 
-        boolean simNao = numero1 > numero2;
+        simNao = numero1 > numero2;
 
         System.out.println("numeroUm é maior a numeroDois? " + simNao);
 
         String nome1 = "Leandro";
         String nome2 = "Leandro";
-        System.out.println("nome1 é igual a nome2: "nome1 == nome2);
+        System.out.println("nome1 é igual a nome2: " + nome1 == nome2);
 
         String nome3 = new String("Leandro");
         //maneira errada
-        System.out.println("nome1 é igual a nome3: "nome1 == nome3);
+        System.out.println("nome1 é igual a nome3: " + nome1 == nome3);
         //maneira certa
-        System.out.println("nome1 é igual a nome3: "nome1.equals(nome3));
+        System.out.println("nome1 é igual a nome3: " + nome1.equals(nome3));
 
         System.out.println();
 
@@ -126,11 +127,6 @@ public class Operadores {
         if(condicao1 || condicao2){
             System.out.println("Umas das condicoes é verdadeira");
         }
-
-
-
-
-
 
     }
 
