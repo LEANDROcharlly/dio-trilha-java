@@ -1,10 +1,11 @@
 package List.OperacoesBasicas;
 
-import java.util.list;
+import java.util.List;
+import java.util.ArrayList;
 
 public class ListaTarefa{
     //atributo
-    private list<Tarefa> tarefaList;
+    private List<Tarefa> tarefaList;
 
     public ListaTarefa(){
         this.tarefaList = new ArrayList<>();
@@ -25,27 +26,29 @@ public class ListaTarefa{
     }
 
     public int obterNumeroTotalTarefas(){
+
         return tarefaList.size();
     }
 
     public void obterDescricoesTarefas(){
+
         System.out.println(tarefaList);
     }
 
     public static void main(String[] args){
         ListaTarefa listaTarefa = new ListaTarefa();
-        System.out.println("O número total de elementos na lista é: " + listataTarefa.obterNumeroTotalTarefas());
+        System.out.println("O número total de elementos na lista é: " + listaTarefa.obterNumeroTotalTarefas());
 
         listaTarefa.adicionarTarefa("tarefa 1");
         listaTarefa.adicionarTarefa("tarefa 1");
         listaTarefa.adicionarTarefa("tarefa 2");
 
-        System.out.println("O número total de elementos na lista é: " + listataTarefa.obterNumeroTotalTarefas());
+        System.out.println("O número total de elementos na lista é: " + listaTarefa.obterNumeroTotalTarefas());
 
         listaTarefa.removerTarefas("tarefa 1");
 
-        System.out.println("O número total de elementos na lista é: " + listataTarefa.obterNumeroTotalTarefas());
+        System.out.println("O número total de elementos na lista é: " + listaTarefa.obterNumeroTotalTarefas());
 
         listaTarefa.obterDescricoesTarefas();
-    }   
+    }
 }
